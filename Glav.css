@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a, .logo {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover, .logo:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.content-section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+#timer {
+    font-size: 48px;
+    margin: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#setTimer select, #setTimer input {
+    margin: 5px;
+    padding: 5px;
+}
+
+#darkMode {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .navbar {
+    background-color: #1a1a1a;
+}
+
+.dark-mode .navbar a, .dark-mode .navbar a:hover, .dark-mode .logo:hover {
+    color: #f2f2f2;
+}
+
+button:hover, select:hover {
+    background-color: #ddd;
+}

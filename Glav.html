@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>FocusTime</title>
+    <link rel="stylesheet" href="Glav.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#timerSection" class="logo">FocusTime</a>
+        <a href="#historySection">История и Статистика</a>
+        <a href="#settingsSection">Настройки</a>
+    </div>
+
+    <div id="timerSection" class="content-section">
+        <h1>FocusTime</h1>
+        <div id="timer">00:00:00</div>
+        <button id="startTimer">Начать</button>
+        <button id="stopTimer">Остановить</button>
+        <button id="resetTimer">Сбросить</button>
+
+        <div id="setTimer">
+            <select id="hours"></select>
+            <select id="minutes"></select>
+            <select id="seconds"></select>
+            <input type="text" id="messageInput" placeholder="Сообщение для уведомления">
+            <button id="setTimerButton">Установить Уведомление</button>
+        </div>
+
+        <div id="notifications"></div>
+    </div>
+
+    <div id="historySection" class="content-section" style="display: none;">
+        <h2>История и Статистика</h2>
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <div id="settingsSection" class="content-section" style="display: none;">
+        <h2>Настройки</h2>
+        <button id="darkMode">Тёмный Режим</button>
+    </div>
+
+    <script src="Glav.js"></script>
+</body>
+</html>

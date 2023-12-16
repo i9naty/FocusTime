@@ -69,3 +69,8 @@ button {
 button:hover, select:hover {
     background-color: #ddd;
 }
+
+.settings-section select, .settings-section input[type=range] {
+    margin-top: 5px;
+    padding: 5px;
+}

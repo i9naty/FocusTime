@@ -99,3 +99,24 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+document.addEventListener('DOMContentLoaded', function () {
+    // Существующий код...
+
+    const darkModeButton = document.getElementById('darkMode');
+    darkModeButton.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+        darkModeButton.textContent = document.body.classList.contains('dark-mode') ? 'Светлый Режим' : 'Тёмный Режим';
+    });
+
+    const fontSelect = document.getElementById('fontSelect');
+    fontSelect.addEventListener('change', function() {
+        document.body.style.fontFamily = this.value;
+    });
+
+    const volumeControl = document.getElementById('volumeControl');
+    volumeControl.addEventListener('input', function() {
+        // Здесь вы можете добавить логику для регулировки громкости уведомлений
+    });
+
+    // Код для Chart.js и другие функции...
+});
